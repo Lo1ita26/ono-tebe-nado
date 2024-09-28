@@ -223,7 +223,7 @@
 }
 
 .about {
-  width: 1052px; 
+  width: 1052px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-top: 140px;
