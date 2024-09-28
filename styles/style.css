@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   width: 1052px;
-  height: 105px;
   margin: 92px 24px;
 }
 
@@ -36,14 +35,18 @@
   height: 105px;
 }
 
+.address {
+  font-size: 18px;
+  line-height: 25px;
+  font-style: normal;
+}
+
 .header-address {
   justify-self: end;
   padding: 5px 65px 2px;
-  font-size: 18px;
-  line-height: 25px;
 }
 
-.header-number {
+.number {
   text-underline-offset: 4px;
 }
 
@@ -52,7 +55,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 757px;
+  min-height: 757px;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -62,7 +65,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 2;
   margin: auto;
 }
@@ -71,19 +74,20 @@
   z-index: 3;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: white;
   font-size: 100px;
   text-transform: uppercase;
-  margin: 165px 50px 147px;
-  line-height: 125px;
+  margin: 165px 50px 140px;
+  line-height: 100px;
   width: 1000px;
-  height: 355px;
   bottom: 237px;
   letter-spacing: 0.3em;
+  gap: 25px;
 }
 
 .aligned-text-center {
-  margin-left: 285px;
+  text-align: center;
 }
 
 .aligned-text-right {
@@ -96,27 +100,28 @@
 
 .cover-description {
   width: 1100px;
-  height: 102px;
   display: flex;
+  gap: 20px;
   flex-direction: row;
   justify-content: space-evenly;
   z-index: 3;
   color: white;
-  top: 670px;
-  left: 78px;
+  padding-left: 25px;
 }
 
 .cover-description-text {
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 19px;
+  word-spacing: 22px;
+  padding-top: 15px;
 }
 
 .cover-button {
   font-size: 22px;
+  font-style: normal;
   color: white;
   width: 256px;
-  height: 51px;
+  padding: 10px;
   background-color: transparent;
   border-style: solid;
   border-width: 1px;
@@ -127,9 +132,9 @@
 
 .lots {
   width: 1052px;
-  height: 692px;
   left: 24px;
-  margin-top: 182px;
+  margin-top: 179px;
+
 }
 
 .lots-heading {
@@ -151,7 +156,7 @@
 .lots-card-list-item {
   display: block;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   flex-grow: 1;
   color: white;
   gap: 20px;
@@ -161,9 +166,13 @@
   display: block;
   text-decoration: none;
   height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
-.card {
+.card-type {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -176,7 +185,6 @@
   text-transform: uppercase;
   margin-left: 40px;
   margin-right: 40px;
-  overflow: hidden;
   z-index: 3;
   position: relative;
   text-decoration-line: underline;
@@ -194,36 +202,16 @@
   margin-bottom: 48px;
 }
 
-.cover-overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  margin: auto;
-}
-
-.card-type-film {
+.card-film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
 }
 
-.card-type-book {
+.card-book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
 }
 
-.card-type-picture {
+.card-picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
 }
 
 .lots-look-more-link {
@@ -235,13 +223,11 @@
 }
 
 .about {
-  height: 595px;
-  width: 1052px;
+  width: 1052px; 
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-top: 146px;
+  margin-top: 140px;
   margin-left: 24px;
-  margin-bottom: 175px;
 }
 
 .about-logo {
@@ -257,7 +243,6 @@
 .about-img {
   width: 148px;
   height: 114px;
-  top: 64px;
   margin: auto;
 }
 
@@ -282,26 +267,22 @@
 
 .paragraphs {
   margin-bottom: 22px;
-  height: 120px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 175px 50px 88px 50px;
+  margin: 180px 50px 88px 50px;
   width: 1100px;
 }
 
+
 .footer-address {
-  font-size: 18px;
-  line-height: 25px;
+  padding: 0;
+  justify-items: start;
 }
 
-.footer-number {
-  text-underline-offset: 4px;
-}
-
-.footer-link-addres {
+.link-address {
   text-underline-offset: 4px;
 }
 
